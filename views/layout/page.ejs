@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+       <a class="nav-link active" href="/">Главная</a>
+      </li>
+    <li class="nav-item">
+       <a class="nav-link" href="/sonic">Соник</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/tails">Тейлз</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/knuckles">Наклз</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/eggman">Доктор Эггман</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <%- body %>
+</body>
+</html>
