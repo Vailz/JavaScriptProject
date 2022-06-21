@@ -1,2 +1,2 @@
 # SonicProject
-Учебный проект на JavaScript.
+Учебный проект на JavaScript
