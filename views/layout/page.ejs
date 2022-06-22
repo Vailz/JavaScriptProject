@@ -14,19 +14,22 @@
       <li class="nav-item">
        <a class="nav-link active" href="/">Главная</a>
       </li>
-    <li class="nav-item">
-       <a class="nav-link" href="/sonic">Соник</a>
+    <!-- <li class="nav-item">
+       <a class="nav-link" href="/heroes/sonic">Соник</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/tails">Тейлз</a>
+        <a class="nav-link" href="/heroes/tails">Тейлз</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/knuckles">Наклз</a>
+        <a class="nav-link" href="/heroes/knuckles">Наклз</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/eggman">Доктор Эггман</a>
-      </li>
+        <a class="nav-link" href="/heroes/eggman">Доктор Эггман</a>
+      </li> -->
     </ul>
+    <% menu.forEach(function(hero){ %>
+      <li><a href="/heroes/<%=hero.nick%>"><%=hero.title%></a></li>
+      <% }) %>    
   </div>
 </nav>
     <%- body %>
