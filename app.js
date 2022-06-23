@@ -26,10 +26,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'bower_components')));
 
+var MongoStore = require('connect-mongo');
 app.use(session({
-  secret: "VinniIsHero",
-  cookie:{maxAge:60*1000}
+secret: "ThreeCats",
+cookie:{maxAge:60*1000},
+store: MongoStore.create({mongoUrl: 'mongodb://localhost/sonic'})
 }))
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
