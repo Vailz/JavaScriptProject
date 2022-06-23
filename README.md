@@ -1,2 +1,2 @@
 # Учебный проект на JavaScript
-Модуль MongoDB, подключение БД
+Сохранение session в MongoDB  
